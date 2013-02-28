@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Compass Rose jQuery</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <script type="text/javascript"
+                src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js">                    
+        </script>
+        <script type="text/javascript"
+                src="js/jQueryRotate.2.2.js">
+        </script>        
+        <link href="css/compassRoss.css" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript"
+            src="js/CompassRoss.js">
+        </script>        
+        
+        <script>
+            $(document).ready(function() {            
+                $('#nav').CompassRose({pos: 45});
+               
+               /* $("#l1").bind("click", function(){
+                    $('.imgB1').rotate({ angle:0,animateTo:270,easing: $.easing.easeInOutExpo })
+                })*/
+                      
+                 
+                 
+       /*         $('img').click(function(e) {
+    var offset = $(this).offset();
+    console.log(
+    'pos X ' + (e.clientX - offset.left) +
+    ' pos Y ' + (e.clientY - offset.top) );
+  });*/
+            });
+           
+        </script>
+    </head>
+    <body>
+        <div id="nav"></div>
+        <!-- <input type="text" id="location" value="1" />-->
+    </body>
+</html>
