@@ -1,14 +1,19 @@
 Compass-Rose-jQuery
 ===================
+Compass Rose jQuery sources
 
-Compass Rose create use jQuery
+## Required
+* [jQueryRotate](http://code.google.com/p/jqueryrotate/)
+* [jQuery 1.9.1+](https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js) 
 
-This one require [jQueryRotate](http://code.google.com/p/jqueryrotate/)
+##How to use it
+Import jQuery, jQueryRotate and	CompassRoss. First add the next HTML 
+<pre><code>&lt;div id="nav"&gt;&lt;/div&gt;
+</code></pre>
 
-An example of use
+Then configure the jQuery
+<pre lang="jQuery">$('#nav').CompassRose({pos: 45}); </pre> 
+where `pos` is the initial position where the arrow points.
 
-jQuery code
-`$('#nav').CompassRose({pos: 45});`
-
-HTMl Code
-`<div id="nav"></div>`
+##Example
+The file `index.html` has a functional example.
